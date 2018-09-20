@@ -52,7 +52,7 @@ class App < Sinatra::Base
 
   get '/logout' do
     #clear session hash here
-    session = {}
+    session[:foo].clear
   end
 
   get '/finish' do
